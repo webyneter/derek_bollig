@@ -1,0 +1,5 @@
+[run]
+include = derek_bollig/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
