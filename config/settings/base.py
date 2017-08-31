@@ -284,5 +284,3 @@ COMPRESS_OUTPUT_DIR = 'compressed'
 
 WHITENOISE_MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware', ]
 MIDDLEWARE = WHITENOISE_MIDDLEWARE + MIDDLEWARE
-# WHITENOISE_ROOT = STATIC_ROOT
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
