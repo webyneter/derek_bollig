@@ -280,6 +280,7 @@ ADMIN_URL = r'^admin/'
 # ------------------------------------------------------------------------------
 COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
+COMPRESS_OUTPUT_DIR = 'compressed'
 
 WHITENOISE_MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware', ]
 MIDDLEWARE = WHITENOISE_MIDDLEWARE + MIDDLEWARE
