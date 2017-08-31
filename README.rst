@@ -11,6 +11,14 @@ A short description of the project.
 :License: MIT
 
 
+Deployment
+----------
+
+#. Follow https://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
+#. ``heroku run python manage.py compress``
+#. ``heroku run python manage.py collectstatic --clear --no-input``
+
+
 Settings
 --------
 
