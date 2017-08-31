@@ -65,3 +65,11 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Your local stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+### Setup WhiteNoise to work with Django Compressor
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
+
+WHITENOISE_MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware', ]
+MIDDLEWARE = WHITENOISE_MIDDLEWARE + MIDDLEWARE
+WHITENOISE_ROOT = STATIC_ROOT
